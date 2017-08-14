@@ -1,1 +1,2 @@
 # PracticeOfShoppingWebSite
+基于Servlet和JSP写的静态页面，学了servlet和jsp时候练练手写的
