@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Shopping</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>HandleRegister</servlet-name>
+    <servlet-class>shop.control.HandleRegister</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HandleRegister</servlet-name>
+    <url-pattern>/control.HandleRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HandleLogin</servlet-name>
+    <servlet-class>shop.control.HandleLogin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HandleLogin</servlet-name>
+    <url-pattern>/control.HandleLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HandleExit</servlet-name>
+    <servlet-class>shop.control.HandleExit</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HandleExit</servlet-name>
+    <url-pattern>/control.HandleExit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GoodsDao</servlet-name>
+    <servlet-class>shop.dao.GoodsDao</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GoodsDao</servlet-name>
+    <url-pattern>/dao.GoodsDao</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>PutGoodsToCar</servlet-name>
+    <servlet-class>shop.goods.PutGoodsToCar</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>PutGoodsToCar</servlet-name>
+    <url-pattern>/goods.PutGoodsToCar</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteGoodsFromCar</servlet-name>
+    <servlet-class>shop.goods.DeleteGoodsFromCar</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteGoodsFromCar</servlet-name>
+    <url-pattern>/goods.DeleteGoodsFromCar</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BuyGoods</servlet-name>
+    <servlet-class>shop.goods.BuyGoods</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>BuyGoods</servlet-name>
+    <url-pattern>/BuyGoods</url-pattern>
+  </servlet-mapping>
+  
+
+  
+</web-app>
